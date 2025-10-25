@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atto Vuoto - In Manutenzione</title>
+    
+    <!-- 1. Load the font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    
+    <!-- 2. Load Tailwind CSS for simple styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 3. Configure Tailwind to use the font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'gothic': ['League Gothic', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- 4. Inline styles for the page -->
+    <style>
+        body {
+            /* A dark background matching your app's theme-color */
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        /* Custom class to apply the gothic font */
+        .font-league-gothic {
+            font-family: 'League Gothic', 'sans-serif';
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <main class="text-center p-8 max-w-lg w-full">
+        
+        <!-- Site Title -->
+        <h1 class="font-league-gothic text-8xl md:text-9xl font-bold uppercase tracking-wide text-white mb-6">
+            Atto Vuoto
+        </h1>
+        
+        <!-- Maintenance Message -->
+        <div class="bg-gray-900 bg-opacity-70 p-6 rounded-lg shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-semibold text-white mb-4">
+                Sito in manutenzione
+            </h2>
+            <p class="text-lg text-gray-300">
+                Stiamo lavorando per tornare online il prima possibile.
+                <br>
+                Ritorneremo presto.
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
